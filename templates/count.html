@@ -1,0 +1,19 @@
+<h1> There is {{count}} word in your sentence </h1>
+<h1> your Text: </h1>
+<a href="{% url 'homepage'%}">Start Again</a>
+
+{{fulltext}}
+<h1> repeat word
+
+{% for word,count in sortedword %}
+<br />
+
+{{word}} - {{count}}
+
+<br />
+
+
+
+{%endfor%}
+
+</h1>
